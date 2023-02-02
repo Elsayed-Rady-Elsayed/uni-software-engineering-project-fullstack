@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --main-color: #9f0baf;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+.image {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../images/undraw_secure_login_pdn4.png");
+  background-size: contain;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-data {
+  height: 100vh;
+}
+.auth-data form {
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.auth-data form p {
+  text-align: start;
+  font-size: 1.2em;
+  color: var(--main-color);
+  cursor: pointer;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.auth-data .header {
+  width: 300px;
+}
+.auth-data h2 {
+  color: var(--main-color);
+  font-size: 4em;
+  font-weight: bolder;
+  animation: Text-animation 2s ease-in-out infinite;
+  margin-bottom: 0.2em;
+  transition: 1s;
+}
+@keyframes Text-animation {
+  30% {
+    color: #fda7df;
+  }
+  60% {
+    color: var(--main-color);
+  }
+  100% {
+    color: #9980fa;
+  }
+}
+.auth-data label {
+  display: block;
+  text-align: start;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+  font-size: 17px;
+  color: var(--main-color);
+}
+.auth-data form input[type="text"],
+.auth-data form input[type="password"] {
+  padding: 20px;
+  width: 100%;
+  border-radius: 30px;
+  outline: none;
+  border: 0.5px solid var(--main-color);
+  font-size: 19px;
+  transition: 0.5s;
+}
+.auth-data form input[type="submit"] {
+  background-color: white;
+  color: var(--main-color);
+  border: none;
+  border: 1px solid var(--main-color);
+  padding: 20px;
+  border-radius: 1.8em;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 0.5em;
+  transition: 0.5s;
+}
+@keyframes btn-shadow {
+  from {
+    box-shadow: 0 0 20px var(--main-color), 0 0 40px var(--main-color);
+  }
+  to {
+    box-shadow: 0 0 20px var(--main-color), 0 0 40px var(--main-color);
+  }
+}
+.auth-data form input:hover,
+.auth-data form input:focus {
+  animation: btn-shadow 0.3s infinite ease-in;
+  border: none;
+  margin: 20px 0;
+}

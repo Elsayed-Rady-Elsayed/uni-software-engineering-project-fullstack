@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .card {
+      height: 20em;
+      width: 20em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      border-radius: 20px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 20px #9f0baf, 0 0 40px #9f0baf;
+      padding: 10px;
+    }
+    a {
+      cursor: pointer;
+      margin-bottom: 0.3em;
+      border-radius: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background-image: linear-gradient(314deg, #6f04d9, #d9048c);
+      color: white;
+      width: 100%;
+      height: 100%;
+    }
+    a:hover {
+      background-image: linear-gradient(314deg, #d9048c, #6f04d9);
+    }
+  </style>
+  <body>
+    <div class="card">
+      <a href="http://localhost/SOFTWARE%20PRODECT/admin/add%20product/"
+        >add product</a
+      >
+      <a
+        href="http://localhost/SOFTWARE%20PRODECT/admin/edit%20product/?id=1&search=&username=&price=&logo=&numberofproducts="
+        >edit product</a
+      >
+      <a href="http://localhost/SOFTWARE%20PRODECT/admin/products%20board/"
+        >products board</a
+      >
+    </div>
+  </body>
+</html>

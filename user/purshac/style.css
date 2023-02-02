@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --main-color: #9f0baf;
+  --secondry-color: #e1bbea;
+}
+.header {
+  background-color: var(--secondry-color);
+  padding: 0.5em;
+  color: var(--main-color);
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header button {
+  background-image: linear-gradient(314deg, #6f04d9, #d9048c);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 5em;
+  cursor: pointer;
+}
+.product-info {
+  display: flex;
+  align-items: center;
+}
+.product-info img {
+  width: 20rem;
+  height: 15rem;
+}
+.product-info .texts .name {
+  color: var(--main-color);
+}
+.product-info .texts .price {
+  color: var(--main-color);
+}
+.product-info .texts .count {
+  display: flex;
+  align-items: center;
+}
+.product-info .texts .num {
+  border: 1px solid black;
+  padding: 1em 1em;
+  text-align: center;
+  margin-right: 1em;
+}
+.product-info .texts #add {
+  color: white;
+  padding: 2px 4px;
+  text-align: center;
+  background-color: var(--main-color);
+  margin-bottom: 0.3em;
+  cursor: pointer;
+}
+.product-info .texts #subtract {
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  padding: 2px 4px;
+  background-color: var(--main-color);
+}
+form label {
+  display: block;
+  text-align: start;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+  font-size: 17px;
+  color: var(--main-color);
+}
+form input[type="text"],
+form input[type="password"] {
+  padding: 20px;
+  width: 100%;
+  border-radius: 30px;
+  outline: none;
+  border: 0.5px solid var(--main-color);
+  font-size: 19px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+form input[type="submit"] {
+  background-color: white;
+  color: var(--main-color);
+  border: none;
+  border: 1px solid var(--main-color);
+  padding: 20px;
+  border-radius: 1.8em;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s;
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+form input:hover,
+form input:focus {
+  animation: btn-shadow 0.3s infinite ease-in;
+  border: none;
+  margin: 20px 0;
+}
+@keyframes btn-shadow {
+  from {
+    box-shadow: 0 0 20px var(--main-color), 0 0 40px var(--main-color);
+  }
+  to {
+    box-shadow: 0 0 20px var(--main-color), 0 0 40px var(--main-color);
+  }
+}
